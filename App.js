@@ -6,13 +6,14 @@
  */
 
 import React from 'react';
-import {Text, View} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import MainNavigation from './navigation/MainNavigation';
 
 const App = () => {
   return (
-    <View>
-      <Text>Welcome</Text>
-    </View>
+    <NavigationContainer>
+      <MainNavigation />
+    </NavigationContainer>
   );
 };
 
