@@ -7,7 +7,7 @@ const Stack = createStackNavigator();
 
 const MainNavigation = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName={Routes.ProductList}>
       <Stack.Screen name={Routes.ProductList} component={ProductListScreen} />
       <Stack.Screen name={Routes.Cart} component={CartScreen} />
     </Stack.Navigator>
